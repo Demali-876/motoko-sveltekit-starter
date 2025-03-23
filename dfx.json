@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "motoko-sveltekit-starter-backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/motoko-sveltekit-starter-backend/main.mo",
+      "type": "motoko"
+    },
+    "motoko-sveltekit-starter-frontend": {
+      "dependencies": [
+        "motoko-sveltekit-starter-backend"
+      ],
+      "source": [
+        "src/motoko-sveltekit-starter-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "motoko-sveltekit-starter-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
